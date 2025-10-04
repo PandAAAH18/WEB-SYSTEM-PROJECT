@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotlight Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js" defer></script>
+    <script type="module" src="modelviewer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo-area">
+                <img src="Images/Logo.png" alt="JACODE Logo" class="logo">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Us -->
+    <section id="about about-grid">
+        <!-- Parallax Title -->
+        <div id="about-intro" class="parallax-container">
+            <h1 id="about-title" class="text-neon">ABOUT US</h1>
+        </div>
+
+        <div class="content-section">
+            <div class="container">
+                <h1 id="about-slide-1" class="fade-text">
+                    We are the <strong>Group 3</strong>, proudly named <span class="text-neon">JACODE</span>.
+                </h1>
+                <br>
+                <p id="about-slide-2" class="fade-text motto">
+                    Our motto —
+                    <span class="motto-word">HARDER</span>
+                    <span class="motto-word">BETTER</span>
+                    <span class="motto-word">FASTER</span>
+                    <span class="motto-word">CODE</span>
+                    — guides our creativity.
+                </p>
+                <br>
+                <h1 id="about-slide-1" class="fade-text">
+                    We are students from <span class="text-neon">BSIS 203</span>, proudly studying at.
+                </h1>
+            </div>
+        </div>
+
+        <!-- Parallax Background -->
+        <div id="about-school" class="parallax-container bg-cover" style="background-image: url('Images/KLD.jpg');">
+            <h2 id="about-school-title" class="text-neon">Kolehiyo ng Lungsod ng Dasmariñas</h2>
+        </div>
+
+        <!-- Outro (fade only) -->
+        <div class="content-section">
+            <div class="container">
+                <h2 id="about-slide-3" class="fade-text">
+                    This website is the result of our teamwork, created as part of our <span class="text-neon">Web
+                        System Project</span> assigned by our teacher, <span class="text-neon"> Sir Con Marvin
+                        Serrano</span>.
+                        </h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission-vision" class="parallax-section">
+        <div class="parallax-bg"></div>
+
+        <div class="mv-container">
+            <!-- Mission -->
+            <div class="mv-box mission">
+                <h2 class="mv-title">
+                    <span>M</span><span>I</span><span>S</span><span>S</span><span>I</span><span>O</span><span>N</span>
+                </h2>
+                <p>
+                    To foster innovation and teamwork in everything we build, empowering us
+                    to push boundaries and create impactful digital solutions.
+                </p>
+            </div>
+
+            <!-- Vision -->
+            <div class="mv-box vision">
+                <h2 class="mv-title">
+                    <span>V</span><span>I</span><span>S</span><span>I</span><span>O</span><span>N</span></h2>
+                <p>
+                    To become a leading group of innovators who craft meaningful technologies,
+                    shaping the future with creativity, collaboration, and excellence.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="core-values">
+        <h2 class="title">
+            <span>C</span><span>O</span><span>R</span><span>E</span>
+            <span>V</span><span>A</span><span>L</span><span>U</span><span>E</span><span>S</span>
+        </h2>
+
+        <div class="values">
+            <div class="value-box">
+                <h3>Innovation</h3>
+                <p>We embrace creativity to push boundaries in coding and ideas.</p>
+            </div>
+            <div class="value-box">
+                <h3>Collaboration</h3>
+                <p>We grow stronger by learning and working together.</p>
+            </div>
+            <div class="value-box">
+                <h3>Excellence</h3>
+                <p>We strive to deliver high-quality work in everything we do.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="section">
+        <div class="content">
+            <h2 class="text-neon">Meet Our Team</h2>
+            <p class="fade-text">Here are the awesome people behind JACODE.</p>
+
+            <div class="team-cards">
+                <div class="team-member">
+                    <div class="member-text">
+                        <h3>Angelo Jesus Y. Caballero</h3>
+                        <p>| FULL STACK DEVELOPER |</p>
+                    </div>
+                    <div class="card" data-music="music/KantotKabet.mp3">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Images/Member1.png" alt="Member 1">
+                            </div>
+                            <div class="card-back">
+                                <div class="back-content">
+                                    <div class="futuristic-screen">
+                                        <p>“I put the 'pro' in procrastination”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="team-member">
+                    <div class="member-text">
+                        <h3>Alexandra Lykemae T. Concepcion</h3>
+                        <p>| PROJECT MANAGER |</p>
+                    </div>
+                    <div class="card" data-music="music/guard ~  by tubero.mp3">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Images/Member2.png" alt="Member 2">
+                            </div>
+                            <div class="card-back">
+                                <div class="back-content">
+                                    <div class="futuristic-screen">
+                                        <p>“kung di kayo makikinig, wala kayo matutunan”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-text">
+                        <h3>Shairil Kriztel O. Capungcol</h3>
+                        <p>| BACK END DEVELOPER |</p>
+                    </div>
+                    <div class="card" data-music="music/Seven (Explicit ver.).mp3">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Images/Member3.png" alt="Member 1">
+                            </div>
+                            <div class="card-back">
+                                <div class="back-content">
+                                    <div class="futuristic-screen">
+                                        <p>“Life is a soup and I'm a fork”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="team-member">
+                    <div class="member-text">
+                        <h3>Kurt Andrew F. Dapat</h3>
+                        <p>| DESGINER |</p>
+                    </div>
+                    <div class="card" data-music="music/Freaking out in the Neighborhood - Mac DeMarco.mp3">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Images/Member4.png" alt="Member 2">
+                            </div>
+                            <div class="card-back">
+                                <div class="back-content">
+                                    <div class="futuristic-screen">
+                                        <p>“Every bug has a silver lining of code.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-cards">
+                    <div class="team-member">
+                        <div class="member-text">
+                            <h3>Jovan C. Certifico</h3>
+                            <p>| FRONT END DEVELOPER |</p>
+                        </div>
+                        <div class="card" data-music="music/Break From Toronto - PARTYNEXTDOOR.mp3">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="Images/Member5.png" alt="Member 1">
+                                </div>
+                                <div class="card-back">
+                                    <div class="back-content">
+                                        <div class="futuristic-screen">
+                                            <p>“Believe you can and you are halfway there.”</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="music-player" class="music-player hidden">
+        <div class="player-info">
+            <span id="song-title">No Song</span>
+        </div>
+        <div class="player-controls">
+            <button id="play-pause">▶</button>
+            <input type="range" id="progress-bar" value="0" min="0" max="100">
+            <span id="time">0:00 / 0:00</span>
+        </div>
+    </div>
+
+    <div class="learn-more-overlay" id="learnMoreOverlay">
+        <div class="profile-ui">
+
+            <!-- Left big info screen -->
+            <div class="info-panel">
+                <img src="Images/InfoScreen.png" alt="Info Panel">
+                <div id="member-bio" class="info-text-container">
+                    <p>STATUS: <span class="text-neon">ONLINE</span></p>
+                    <p>BIRTHDAY:</p>
+                    <p id="bio-bday" class="text-neon">00/00/00</p>
+                    <p>CONTACT INFO:</p>
+                    <p id="bio-contact" class="text-neon">"Loading..."</p>
+                    <p>SPECIALTY:</p>
+                    <p id="bio-special" class="text-neon">"Loading..."</p>
+                </div>
+            </div>
+
+            <!-- Middle: Circle + text -->
+            <div class="profile-content">
+                <div class="profile-circle">
+                    <img src="Images/Circle.png" alt="frame" class="circle-frame">
+                    <model-viewer id="profileModel" src="" alt="3D Head" auto-rotate camera-controls
+                        disable-zoom></model-viewer>
+                </div>
+
+                <!-- Name + Role under circle -->
+                <div class="profile-info">
+                    <h2 id="profileName">Member Name</h2>
+                    <p id="profileRole">| ROLE |</p>
+                    <button id="closeOverlay">Close</button>
+                </div>
+            </div>
+
+            <!-- Right panel -->
+            <div class="side-panel">
+                <!-- Smaller screen -->
+                <div class="mini-screen">
+                    <img src="Images/MiniScreen.png" alt="Mini Screen">
+                    <div id="member-stats" class="stats-text-container">
+                        <p>GENDER: <span id="stat-gender">N/A</span></p>
+                        <p>AGE: <span id="stat-age">N/A</span></p>
+                        <p>HEIGHT: <span id="stat-height">N/A</span></p>
+                        <p>WEIGHT: <span id="stat-weight">N/A</span></p>
+                    </div>
+                </div>
+
+                <!-- Audio visualizer -->
+                <div class="audio-visualizer">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+                <!-- Social links -->
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" class="social-circle">FB</a>
+                    <a href="https://github.com" target="_blank" class="social-circle">GH</a>
+                    <a href="https://linkedin.com" target="_blank" class="social-circle">IN</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

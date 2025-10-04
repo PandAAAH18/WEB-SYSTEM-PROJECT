@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotlight Grid</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js" defer></script>
+  <script type="module" src="modelviewer.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+ <header>
+  <nav class="container">
+    <div class="logo-area">
+      <img src="Images/Logo.png" alt="JACODE Logo" class="logo">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <!-- Hero -->
+ <section id="home" class="section breathing-grid">
+  <model-viewer src="model/source/head.glb" alt="3D model" auto-rotate></model-viewer>
+  <div class="grid-overlay"></div>
+  <div class="content">
+    <!-- Typewriter placeholders -->
+    <h1 class="text-neon typewriter" data-texts='["WELCOME TO OUR WEBSITE","JACODE"]' data-loop="true">
+      <span></span>
+    </h1>
+    <p class="typewriter" data-texts='["Harder, Better, Faster… CODE"]' data-loop="false">
+      <span></span>
+    </p>
+
+    <!-- CTA button -->
+    <a href="about.html" class="cta-btn">Learn More About Us</a>
+  </div>
+</section>
+
+ 
+</body>
+
+</html>
