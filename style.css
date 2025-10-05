@@ -148,6 +148,164 @@ header .nav a:hover {
 }
 
 /* =========================================================
+   FOOTER
+========================================================= */
+.footer {
+  position: relative;
+  background: radial-gradient(circle at top, rgba(0,255,234,0.08) 0%, rgba(0,0,0,1) 80%);
+  color: var(--color-off-white);
+  padding: 4rem 2rem 2rem;
+  overflow: hidden;
+  border-top: 2px solid rgba(0,255,234,0.3);
+  box-shadow: 0 -4px 20px rgba(0,255,234,0.1);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(90deg, transparent, rgba(0,255,234,0.6), transparent);
+  animation: footerScan 6s linear infinite;
+  opacity: 0.3;
+}
+@keyframes footerScan {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+.footer-logo {
+  height: 80px;
+  filter: drop-shadow(0 0 10px var(--color-neon));
+  transition: transform 0.3s ease;
+}
+.footer-logo:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+.footer-title {
+  color: var(--color-neon);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  position: relative;
+}
+.footer-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: var(--color-neon);
+  box-shadow: 0 0 8px var(--color-neon);
+  margin-top: 0.4rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links li {
+  margin: 0.5rem 0;
+}
+.footer-links a {
+  color: var(--color-secondary-neon);
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.footer-links a:hover {
+  color: var(--color-neon);
+  text-shadow: 0 0 10px var(--shadow-neon);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--color-neon);
+  border-radius: 50%;
+  color: var(--color-neon);
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.social-icon:hover {
+  background: var(--color-neon);
+  color: var(--color-black);
+  box-shadow: 0 0 20px var(--shadow-neon);
+  transform: scale(1.1);
+}
+
+.footer-quote {
+  font-style: italic;
+  color: var(--color-secondary-neon);
+  margin-top: 0.8rem;
+  max-width: 250px;
+}
+
+.footer-email {
+  color: var(--color-secondary-neon);
+  font-size: 0.9rem;
+}
+
+.footer-divider {
+  height: 2px;
+  margin: 2rem auto;
+  width: 90%;
+  background: linear-gradient(90deg, transparent, var(--color-neon), transparent);
+  box-shadow: 0 0 12px var(--color-neon);
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-secondary-neon);
+  margin-top: 1rem;
+  position: relative;
+}
+.glow-text {
+  animation: glowPulse 2s infinite alternate;
+}
+@keyframes glowPulse {
+  0% { text-shadow: 0 0 6px var(--color-neon), 0 0 12px var(--color-neon); }
+  100% { text-shadow: 0 0 12px var(--color-neon), 0 0 30px var(--color-neon); }
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-logo {
+    margin-bottom: 1rem;
+  }
+}
+
+/* =========================================================
    HERO SECTION
 ========================================================= */
 .section {
