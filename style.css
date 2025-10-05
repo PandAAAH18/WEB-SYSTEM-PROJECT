@@ -55,9 +55,6 @@ header {
   padding: 0 2rem;
   box-sizing: border-box;
   z-index: 1000;
-  background: var(--bg-header);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--border-neon-light);
 
   display: flex;
   align-items: center;
